@@ -59,3 +59,19 @@ h1{font-size:32px;margin:18px 0 8px;color:var(--text-light)}
   .nav{display:none}
   .header-inner{padding:12px}
 }
+@media (max-width: 520px){
+  .container{padding:16px;}
+  h1{font-size:24px; line-height:1.15;}
+
+  /* Stop “squashed” rows */
+  .pills{flex-wrap:wrap;}
+  .stats{flex-direction:column;}
+
+  /* Make the 2-column contact area stack */
+  .grid-5{grid-template-columns:1fr;}
+  .grid-2{grid-template-columns:1fr;}
+
+  /* Buttons and modal fit better on small screens */
+  .btn{width:100%; text-align:center;}
+  .modal-panel{max-width:92vw;}
+}
